@@ -1,0 +1,58 @@
+.is-style-list-icon-blossom {
+	--separator-icon: "🌼";
+}
+.is-style-list-icon-sun {
+	--separator-icon: "☀️";
+}
+.is-style-list-icon-feather {
+	--separator-icon: "🧨";
+}
+.is-style-list-icon-fire {
+	--separator-icon: "🔥";
+}
+.is-style-list-icon-leaves {
+	--separator-icon: "🍃";
+}
+.is-style-list-icon-coffee {
+	--separator-icon: "☕";
+}
+.is-style-list-icon-beer {
+	--separator-icon: "🍻";
+}
+.is-style-list-icon-guitar {
+	--separator-icon: "🎸";
+}
+.is-style-list-icon-pencil {
+	--separator-icon: "✏️";
+}
+.is-style-list-icon-rocket {
+	--separator-icon: "🚀";
+}
+.is-style-list-icon-clover {
+	--separator-icon: "☘️";
+}
+.is-style-list-icon-star {
+	--separator-icon: "⭐";
+}
+.is-style-list-icon-sunflower {
+	--separator-icon: "🌻";
+}
+.is-style-list-icon-beach-umbrella {
+	--separator-icon: "⛱️";
+}
+
+ul.wp-block-list[class*="is-style-list-icon"] {
+	list-style-type: none;
+	padding-left: 20px;
+	li {
+		display: flex;
+		align-items: center;
+		margin-bottom: 5px;
+
+		&::before {
+			content: var(--separator-icon, "\2766");
+			margin-right: 10px;
+			display: inline-block;
+		}
+	}
+}
